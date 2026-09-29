@@ -1,0 +1,49 @@
+/* Tokens extraídos do Figma (Blokasa - Pisos Intertravados por Orçamento) */
+:root {
+  /* Cores */
+  --color-bg: #faf9f5;
+  --color-surface: #f4f4ea;
+  --color-surface-2: #f0eee8;
+  --color-surface-3: #eeefe4;
+  --color-white: #ffffff;
+  --color-text: #1e211e;
+  --color-muted: #676961;
+  --color-primary: #a95535;
+  --color-primary-dark: #8a3e20;
+  --color-forest: #394334;
+  --color-sage: #bfcab6;
+  --color-sage-light: #d8e3ce;
+  --color-gold: #c4aa7a;
+  --color-cream: #faf9f5;
+
+  /* Tipografia */
+  --font-display: 'Manrope', system-ui, sans-serif;
+  --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
+
+  /* Raios */
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-field: 48px;
+  --radius-pill: 9999px;
+
+  /* Sombras */
+  --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+  /* Layout */
+  --container-max: 1280px;
+  --gutter: 32px;
+  --section-py: 80px;
+  --header-h: 76px;
+}
+
+@media (max-width: 767px) {
+  :root {
+    --gutter: 20px;
+    --section-py: 56px;
+    --header-h: 64px;
+  }
+}

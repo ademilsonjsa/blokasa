@@ -1,0 +1,148 @@
+.section {
+  padding-block: var(--section-py);
+  background: var(--color-bg);
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 32px;
+  margin: 0;
+  padding: 48px;
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.srOnlyWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.value {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+}
+
+.primary { color: var(--color-primary); }
+.forest { color: var(--color-forest); }
+.gold { color: var(--color-gold); }
+
+.title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.09px;
+}
+
+.text {
+  margin: 0;
+  max-width: 300px;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-muted);
+}
+
+.testimonial {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin: 0;
+  padding: 40px;
+  border-radius: var(--radius-lg);
+  background: var(--color-surface-2);
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.05));
+}
+
+.quoteIcon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: var(--radius-pill);
+  background: var(--color-forest);
+}
+
+.quoteBody {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.quote {
+  margin: 0;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 29.25px;
+}
+
+.author {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.09px;
+}
+
+.role {
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-muted);
+}
+
+@media (max-width: 1023px) {
+  .metrics {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .inner {
+    gap: 24px;
+  }
+
+  .metrics {
+    padding: 28px 24px;
+  }
+
+  .value {
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  .testimonial {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 28px 24px;
+  }
+
+  .quoteIcon {
+    width: 56px;
+    height: 56px;
+  }
+
+  .quote {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}

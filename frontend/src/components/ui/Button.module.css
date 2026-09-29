@@ -1,0 +1,94 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 48px;
+  padding: 0 32px;
+  border: 0;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: transform 0.15s ease, filter 0.15s ease, background-color 0.15s ease;
+}
+
+.button:hover {
+  filter: brightness(1.06);
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.icon {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+}
+
+.md {
+  height: 48px;
+}
+
+.lg {
+  height: 56px;
+  padding: 0 40px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.block {
+  width: 100%;
+}
+
+.primary {
+  background: var(--color-primary);
+  color: var(--color-white);
+  box-shadow: var(--shadow-md);
+}
+
+.forest {
+  background: var(--color-forest);
+  color: var(--color-cream);
+  box-shadow: var(--shadow-md);
+}
+
+.light {
+  background: var(--color-white);
+  color: var(--color-text);
+  box-shadow: var(--shadow-lg);
+}
+
+.glass {
+  background: rgba(250, 249, 245, 0.1);
+  color: var(--color-cream);
+  backdrop-filter: blur(2px);
+  padding: 0 28px;
+}
+
+.soft {
+  background: var(--color-surface-3);
+  color: var(--color-forest);
+  justify-content: space-between;
+  height: 40px;
+  padding: 0 16px;
+  border-radius: var(--radius-field);
+}
+
+.outline {
+  background: transparent;
+  color: var(--color-cream);
+  border: 1px solid rgba(191, 202, 182, 0.4);
+  height: 38px;
+  padding: 0 21px;
+  gap: 6px;
+}
